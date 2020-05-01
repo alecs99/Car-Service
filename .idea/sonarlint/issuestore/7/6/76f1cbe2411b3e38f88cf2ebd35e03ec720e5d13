@@ -1,7 +1,9 @@
 
 {
-java:S3012<"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¸™©ıÿÿÿÿ8â—ìÜ“.
+java:S3012Q"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¸™©ıÿÿÿÿ8µ©Ò«›.
 v
-java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(”Ğ‘¯8‡æÜ“.
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(”Ğ‘¯8µ©Ò«›.
+
+java:S1488!"_Immediately return this expression instead of assigning it to the temporary variable "dataStr".(Ø¤¬ûşÿÿÿÿ8Ãöü¯œ.
 v
-java:S2293D"YReplace the type specification in this constructor call with the diamond operator ("<>").(”Ğ‘¯8 Òİ“.
+java:S2293O"YReplace the type specification in this constructor call with the diamond operator ("<>").(”Ğ‘¯8µ©Ò«›.

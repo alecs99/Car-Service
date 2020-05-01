@@ -1,0 +1,30 @@
+
+@
+java:S1148^"#Use a logger to log this exception.(Ç’Çê8‚ÆÂÐœ.
+M
+java:S1481t"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8€„ÚÐœ.
+N
+java:S1481ƒ"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8î–ÚÐœ.
+X	java:S125'"<This block of commented-out lines of code should be removed.(þÑ²8à¯ÃÏœ.
+A
+java:S1148Œ"#Use a logger to log this exception.(Ç’Çê8î–ÚÐœ.
+@
+java:S1148P"#Use a logger to log this exception.(Ç’Çê8‚ÆÂÐœ.
+N
+java:S1481’"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8ï®ÚÐœ.
+M
+java:S1481f"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8‹òÙÐœ.
+W	java:S125%"<This block of commented-out lines of code should be removed.(×……N8à¯ÃÏœ.
+A
+java:S1148š"#Use a logger to log this exception.(Ç’Çê8ï®ÚÐœ.
+@
+java:S1148}"#Use a logger to log this exception.(Ç’Çê8€„ÚÐœ.
+M
+java:S1481V"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8×ÙÐœ.
+X	java:S125)"<This block of commented-out lines of code should be removed.(ÅöÕò8à¯ÃÏœ.
+@
+java:S1148n"#Use a logger to log this exception.(Ç’Çê8‹òÙÐœ.
+]	java:S125#"<This block of commented-out lines of code should be removed.(§½ð˜ÿÿÿÿÿ8à¯ÃÏœ.
+M
+java:S1481G"0Remove this unused "linieHeader" local variable.(Ÿž˜‰8”©ÙÐœ.
+]	java:S125"<This block of commented-out lines of code should be removed.(ßÛâ¡þÿÿÿÿ8à¯ÃÏœ.

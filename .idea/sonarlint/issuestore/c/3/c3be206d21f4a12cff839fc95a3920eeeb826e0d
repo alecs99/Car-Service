@@ -1,15 +1,42 @@
 
-U	java:S106z"9Replace this use of System.out or System.err by a logger.(ØñëÓ8ÃœúÖ“.
-V	java:S106‡"9Replace this use of System.out or System.err by a logger.(—ıºŞ8¼‚†Ş“.
-T	java:S106s"9Replace this use of System.out or System.err by a logger.(Şã‰I8š…ùÖ“.
-V	java:S106"9Replace this use of System.out or System.err by a logger.(¨¿Öó8¼‚†Ş“.
-V	java:S106"9Replace this use of System.out or System.err by a logger.(·¼„Ç8âŒ±Ú“.
-Z	java:S106\"9Replace this use of System.out or System.err by a logger.(Ì˜„Âúÿÿÿÿ8˜ŠìÖ“.
-U	java:S106j"9Replace this use of System.out or System.err by a logger.(¶öĞï8è•µ”.
-[	java:S106"9Replace this use of System.out or System.err by a logger.(ø¯¹œşÿÿÿÿ8ÑşÖ“.
-X	java:S125Œ"<This block of commented-out lines of code should be removed.(Õ‹ÙT8æñç„”.
-U	java:S106l"9Replace this use of System.out or System.err by a logger.(Ğ«Ú…8’¢Ê”.
-Z	java:S106t"9Replace this use of System.out or System.err by a logger.(»µêùÿÿÿÿ8š…ùÖ“.
-V	java:S106€"9Replace this use of System.out or System.err by a logger.(¸Š»õ8¼‚†Ş“.
-T	java:S106c"9Replace this use of System.out or System.err by a logger.(´›ın8ÎïÖ“.
-U	java:S106]"9Replace this use of System.out or System.err by a logger.(Ğ«Ú…8ı½îÖ“.
+A
+java:S1148î"#Use a logger to log this exception.(Ç’Çê8©ÒÛ´œ.
+A
+java:S1148Ï"#Use a logger to log this exception.(Ç’Çê8š¦‡µœ.
+A
+java:S1148à"#Use a logger to log this exception.(Ç’Çê8š¦‡µœ.
+A
+java:S1148Ÿ"#Use a logger to log this exception.(Ç’Çê8óÜ´œ.
+ƒ
+java:S1192¯"`Define a constant instead of duplicating this literal "***Raport generat cu succes!***" 6 times.(½”†Œûÿÿÿÿ8›å¼´œ.
+k
+java:S1192Ö"MDefine a constant instead of duplicating this literal "Tinichigerie" 3 times.(Ö¤ˆ»8œ›µœ.
+|
+java:S1192Ğ"YDefine a constant instead of duplicating this literal "Introduceti operatiunea:" 3 times.(Î‹à•úÿÿÿÿ8®»§œ.
+A
+java:S1148ş"#Use a logger to log this exception.(Ç’Çê8™”µœ.
+i
+java:S1192ü"KDefine a constant instead of duplicating this literal "Operatiune" 3 times.(×øãœ8íûµœ.
+A
+java:S1148¡"#Use a logger to log this exception.(Ç’Çê8´ûâ±œ.
+A
+java:S1148¾"#Use a logger to log this exception.(Ç’Çê8ÁôÅ´œ.
+g
+java:S1192Ï"IDefine a constant instead of duplicating this literal "Mecanica" 3 times.(¯š™É8®à˜µœ.
+m
+java:S1192–"ODefine a constant instead of duplicating this literal "Prenume Client" 3 times.(éÖ™8›å¼´œ.
+A
+java:S1148"#Use a logger to log this exception.(Ç’Çê8üÎğ°œ.
+A
+java:S1148Î"#Use a logger to log this exception.(Ç’Çê8‡ÊÈ´œ.
+A
+java:S1148"#Use a logger to log this exception.(Ç’Çê8šøı´œ.
+A
+java:S1148²"#Use a logger to log this exception.(Ç’Çê8š¦‡µœ.
+A
+java:S1148‘"#Use a logger to log this exception.(Ç’Çê8™”µœ.
+p
+java:S1192ú"MDefine a constant instead of duplicating this literal "Durata (min)" 3 times.(¯óª¦şÿÿÿÿ8íûµœ.
+p	java:S100ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒŠÍúıÿÿÿÿ8™”µœ.
+o
+java:S1192”"LDefine a constant instead of duplicating this literal "Nume Client" 3 times.(íûÍÑıÿÿÿÿ8›å¼´œ.
