@@ -36,6 +36,6 @@ public class Mecanic extends Angajat {
     public String toString() {
         return "Angajatul " + super.getNumeAngajat() + ' ' + super.getPrenumeAngajat() + " este angajat ca mecanic " +
                 "cu salariul " + super.getSalariu() + " avand atributia de " + atributie +
-                " si bonusul: " + bonus;
+                " si bonusul " + bonus;
     }
 }

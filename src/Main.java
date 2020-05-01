@@ -105,7 +105,7 @@ public class Main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("Ai ales o optiune gresita!!");
+                    System.out.println("Ai ales o optiune gresita!");
 
             }
         }

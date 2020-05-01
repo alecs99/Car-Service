@@ -1,6 +1,7 @@
 package model;
 
 public class Casier extends Angajat {
+
     public Casier(String nume, String prenume, double salariu) {
         super(nume, prenume, "Casier", salariu);
     }

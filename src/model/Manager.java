@@ -1,6 +1,7 @@
 package model;
 
 /* Clasa singleton pentru definirea manaqerului */
+
 public class Manager {
     private static Manager m = null;
     private String nume;

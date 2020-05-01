@@ -14,10 +14,8 @@ public class Vulcanizare extends Servicii {
         super("Vulcanizare", cost, durataExecutie);
     }
 
-    public String getOperatiune() {
-        return operatiune;
+    public String getOperatiune() { return operatiune;
     }
-
     @Override
     public String toString() {
         return "Serviciul din categoria Vulcanizare ce are ca operatiune " + operatiune +

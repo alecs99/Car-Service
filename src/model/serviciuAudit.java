@@ -12,8 +12,7 @@ public class serviciuAudit {
 
     private static serviciuAudit audit = new serviciuAudit();
 
-    private serviciuAudit() {
-    }
+    private serviciuAudit() {}
 
     public static serviciuAudit getAudit() {
         if (audit == null) {

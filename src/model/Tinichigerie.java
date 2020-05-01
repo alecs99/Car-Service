@@ -20,9 +20,7 @@ public class Tinichigerie extends Servicii {
         return operatiune;
     }
 
-    public double getGradDificultate() {
-        return gradDificultate;
-    }
+    public double getGradDificultate() { return gradDificultate; }
 
     @Override
     public String toString() {

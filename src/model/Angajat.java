@@ -46,7 +46,6 @@ public abstract class Angajat {
         this.salariu = salariu;
     }
 
-
     @Override
     public String toString() {
         return "Angajat{" +

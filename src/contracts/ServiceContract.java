@@ -1,9 +1,5 @@
 package contracts;
 
-import model.Angajat;
-import model.Rezervari;
-import model.Servicii;
-
 public interface ServiceContract {
     void afiseazaAngajatii();
 

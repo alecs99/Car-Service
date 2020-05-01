@@ -13,10 +13,12 @@ public class ServiceHelper extends ServiceHelperContract {
 
     @Override
     public ServiceAuto creeazaServiceCuDateInitiale() {
+
         /*
           Aceasta parte de cod a fost lasata pentru a exemplifica modalitatea prin care s-a realizat introducerea
           datelor pentru partea 1.
          */
+
 //        Angajat mecanic1 = new Mecanic("Costache", "Cornel", 2000, "Tinichigiu", 0.5);
 //        Angajat mecanic2 = new Mecanic("Barbu", "Ionel", 1600, "Vopsitor", 0.5);
 //        Angajat mecanic3 = new Mecanic("Sirbu", "Mihai", 1800, "Mecanic", 2.2);

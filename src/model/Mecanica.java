@@ -19,10 +19,7 @@ public class Mecanica extends Servicii {
         return operatiune;
     }
 
-    public boolean isInlocuirePiesa() {
-        return inlocuirePiesa;
-    }
-
+    public boolean isInlocuirePiesa() { return inlocuirePiesa; }
 
     @Override
     public String toString() {

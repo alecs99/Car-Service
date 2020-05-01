@@ -70,6 +70,7 @@ public class Rezervari {
         this.numeServiciu = numeServiciu;
     }
 
+    /*Metoda prin care se adauga/sterge un element dintr-un array de tip Rezervari */
 
     public static Rezervari[] addRezervare(Rezervari[] rezervari, Rezervari rezervare) {
         if (rezervari == null) {

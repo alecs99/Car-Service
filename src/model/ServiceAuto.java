@@ -155,11 +155,11 @@ public class ServiceAuto implements ServiceContract {
     }
 
     @Override
-    public void afiseazaAngajatiSortat(){
+    public void afiseazaAngajatiSortat() {
         AngajatComparator sortareAngajati = new AngajatComparator();
         Collections.sort(angajati, sortareAngajati);
         System.out.println("***Angajatii sunt:***");
-        for(Angajat angajat : angajati){
+        for (Angajat angajat : angajati) {
             System.out.println(angajat);
         }
     }
