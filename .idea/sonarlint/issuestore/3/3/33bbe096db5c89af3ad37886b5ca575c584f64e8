@@ -1,0 +1,13 @@
+
+M
+java:S1128"+Remove this unused import 'model.Servicii'.(ÈÏ’îûÿÿÿÿ8óå˜‚”.
+I
+java:S1128",Remove this unused import 'model.Rezervari'.(¡–å8ºè÷”.
+L
+java:S1128"*Remove this unused import 'model.Angajat'.(Õ“ÒÇüÿÿÿÿ8‘äæ”.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¾ôñ”.
+M
+java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¤¸ñ”.
+a
+java:S1610"EConvert the abstract class "ServiceHelperContract" into an interface.(¦¨¨G8õºÖ”.

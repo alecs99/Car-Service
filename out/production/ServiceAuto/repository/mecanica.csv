@@ -1,0 +1,4 @@
+Nume,Cost,Durata (min),Operatiune,Inlocuire Piesa true/false
+Mecanica,100.0,30.0,Constatare,false
+Mecanica,300.0,60.0,Revizie frane,false
+Mecanica,2000.0,360.0,Schimbare Ambreiaj,true
