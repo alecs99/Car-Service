@@ -22,8 +22,7 @@ public class serviciuAudit {
     }
 
     public void scrie(String actiune) {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(
-                "audit.csv", true))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("audit.csv", true))) {
             Timestamp timp = new Timestamp(System.currentTimeMillis());
             bufferedWriter.append(actiune);
             bufferedWriter.append(",");
