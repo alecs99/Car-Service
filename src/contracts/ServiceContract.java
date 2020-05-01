@@ -5,12 +5,40 @@ import model.Rezervari;
 import model.Servicii;
 
 public interface ServiceContract {
-    void adaugaAngajat(Angajat angajat);
-    void stergeAngajat(int index);
+    void afiseazaAngajatii();
+
+    void afiseazaServicii();
+
+    void afiseazaRezervari();
+
+    void adaugaAngajat();
+
+    void stergeAngajat();
+
     void afiseazaAngajatiSortat();
-    void adaugaRezervare(Rezervari rezervare);
-    void stergeRezervare(int index);
+
+    void adaugaRezervare();
+
+    void stergeRezervare();
+
     void afisareUrmatoareleRezervari();
-    void adaugaServiciu(Servicii serviciu);
-    void stergeServiciu(int index);
+
+    void adaugaServiciu();
+
+    void stergeServiciu();
+
+    void afiseazaManager();
+
+    void genereazaCsvMecanici();
+
+    void genereazaCsvCasier();
+
+    void genereazaCsvMecanica();
+
+    void genereazaCsvTinichigerie();
+
+    void genereazaCsvVulcanizare();
+
+    void genereazaCsvRezervari();
+
 }

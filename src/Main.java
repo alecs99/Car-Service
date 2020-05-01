@@ -1,117 +1,111 @@
 import helpers.ServiceHelper;
-import model.Angajat;
-import model.Rezervari;
-import model.ServiceAuto;
-import model.Servicii;
+import model.*;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         ServiceAuto serviceAuto = new ServiceHelper().creeazaServiceCuDateInitiale();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(">>Bun venit la service-ul auto:" + serviceAuto.getNumeService() + "<<");
-        System.out.println("\n");
-        System.out.println(">>Selectati una din comenzi prin tastarea numarului<<");
-        System.out.println("1.Afiseaza toti angajatii");
-        System.out.println("2.Afiseaza toate serviciile");
-        System.out.println("3.Afiseaza toate rezervarile");
-        System.out.println("4.Afiseaza toti angajatii sortati dupa nume");
-        System.out.println("5.Afiseaza urmatoarele rezervari");
-        System.out.println("6.Adauga un angajat");
-        System.out.println("7.Sterge un angajat");
-        System.out.println("8.Adauga un serviciu");
-        System.out.println("9.Sterge un serviciu");
-        System.out.println("10.Adauga o rezervare");
-        System.out.println("11.Sterge o rezervare");
-        System.out.println("12.Iesire");
+        serviciuAudit audit = serviciuAudit.getAudit();
+        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
+        Map<Integer, String> optiuni = new HashMap<Integer, String>();
+        optiuni.put(1, "Afiseaza toti angajatii");
+        optiuni.put(2, "Afiseaza toate serviciile");
+        optiuni.put(3, "Afiseaza toate rezervarile in ordinea adaugarii");
+        optiuni.put(4, "Afiseaza toti angajatii sortati dupa nume");
+        optiuni.put(5, "Afiseaza rezervarile in ordinea datei");
+        optiuni.put(6, "Adauga un angajat");
+        optiuni.put(7, "Sterge un angajat");
+        optiuni.put(8, "Adauga un serviciu");
+        optiuni.put(9, "Sterge un serviciu");
+        optiuni.put(10, "Adauga o rezervare");
+        optiuni.put(11, "Sterge o rezervare");
+        optiuni.put(12, "Afiseaza managerul firmei");
+        optiuni.put(13, "Afiseaza informatii cu privire la service");
+        optiuni.put(14, "Genereaza raport rezervari");
+        optiuni.put(15, "Genereaza raport mecanici");
+        optiuni.put(16, "Genereaza raport casieri");
+        optiuni.put(17, "Genereaza raport servicii mecanica");
+        optiuni.put(18, "Genereaza raport servicii tinichigerie");
+        optiuni.put(19, "Genereaza raport servicii vulcanizare");
+        optiuni.put(20, "Iesire");
 
-        while(true){
-            String selectie = scanner.next();
-            switch(selectie){
-                case "1":
-                    System.out.println("Service-ul are urmatorii angajati: ");
-                    System.out.println("\n");
-                    System.out.println(serviceAuto.getAngajati());
+        System.out.println("\n>>Bun venit la service-ul auto: " + serviceAuto.getNumeService() + "<<\n");
+        System.out.println(">>Selectati una din comenzi prin tastarea numarului<<");
+
+        for (Integer index : optiuni.keySet()) {
+            System.out.println(index + ". " + optiuni.get(index));
+        }
+
+        while (true) {
+            int selectie = scanner.nextInt();
+            audit.scrie(optiuni.get(selectie));
+            switch (selectie) {
+                case 1:
+                    serviceAuto.afiseazaAngajatii();
                     break;
-                case "2":
-                    System.out.println("Service-ul ofera urmatoarele servicii: ");
-                    System.out.println("\n");
-                    System.out.println(serviceAuto.getServicii());
+                case 2:
+                    serviceAuto.afiseazaServicii();
                     break;
-                case "3":
-                    System.out.println("Service-ul are urmatoarele rezervari: ");
-                    System.out.println("\n");
-                    System.out.println(serviceAuto.getRezervari());
+                case 3:
+                    serviceAuto.afiseazaRezervari();
                     break;
-                case "4":
-                    System.out.println("Sortare angajati dupa nume:");
-                    System.out.println("\n");
+                case 4:
                     serviceAuto.afiseazaAngajatiSortat();
-                case "5":
-                    System.out.println("Service-ul va avea urmatoarele rezervari:");
-                    System.out.println("\n");
+                    break;
+                case 5:
                     serviceAuto.afisareUrmatoareleRezervari();
-                case "6":
-                    System.out.println("Introduceti numele angajatului");
-                    String numeAngajat = scanner.next();
-                    System.out.println("Introduceti prenumele angajatului");
-                    String prenumeAngajat = scanner.next();
-                    System.out.println("Introduceti salariul angajatului");
-                    String salariu = scanner.next();
-                    System.out.println("Introduceti bonusul angajatului");
-                    String bonus = scanner.next();
-                    Angajat angajat = new Angajat(numeAngajat,prenumeAngajat,Integer.valueOf(salariu),Integer.valueOf(bonus));
-                    serviceAuto.adaugaAngajat(angajat);
                     break;
-                case "7":
-                    System.out.println("Introduceti index-ul angajatului pe care doriti sa il eliminati:");
-                    String index = scanner.next();
-                    serviceAuto.stergeAngajat(Integer.valueOf(index));
+                case 6:
+                    serviceAuto.adaugaAngajat();
                     break;
-                case "8":
-                    System.out.println("Introduceti numele serviciului");
-                    String numeServiciu = scanner.next();
-                    System.out.println("Introduceti costul serviciului");
-                    String cost = scanner.next();
-                    System.out.println("Introduceti durata de executie");
-                    String durata = scanner.next();
-                    Servicii serviciu = new Servicii(numeServiciu,Integer.valueOf(cost),Integer.valueOf(durata));
-                    serviceAuto.adaugaServiciu(serviciu);
+                case 7:
+                    serviceAuto.stergeAngajat();
                     break;
-                case "9":
-                    System.out.println("Introduceti index-ul serviciului pe care doriti sa il eliminati:");
-                    index = scanner.next();
-                    serviceAuto.stergeServiciu(Integer.valueOf(index));
+                case 8:
+                    serviceAuto.adaugaServiciu();
                     break;
-                case "10":
-                    System.out.println("Introduceti numele clientului");
-                    String nume = scanner.next();
-                    System.out.println("Introduceti prenumele clientului");
-                    String prenume = scanner.next();
-                    System.out.println("Introduceti marca masinii clientului");
-                    String marca = scanner.next();
-                    System.out.println("Introduceti tipul serviciului");
-                    String tipServiciu = scanner.next();
-                    System.out.println("Introduceti data rezervarii zi, luna, an");
-                    String zi = scanner.next();
-                    String luna = scanner.next();
-                    String an = scanner.next();
-                    Rezervari rezervare = new Rezervari(nume, prenume, marca, tipServiciu,Integer.valueOf(zi), Integer.valueOf(luna), Integer.valueOf(an));
-                    serviceAuto.adaugaRezervare(rezervare);
+                case 9:
+                    serviceAuto.stergeServiciu();
                     break;
-                case "11":
-                    System.out.println("Introduceti index-ul rezervarii pe care doriti sa o eliminati:");
-                    index = scanner.next();
-                    serviceAuto.stergeRezervare(Integer.valueOf(index));
+                case 10:
+                    serviceAuto.adaugaRezervare();
                     break;
-                case "12":
+                case 11:
+                    serviceAuto.stergeRezervare();
+                    break;
+                case 12:
+                    serviceAuto.afiseazaManager();
+                    break;
+                case 13:
+                    System.out.println(serviceAuto);
+                    break;
+                case 14:
+                    serviceAuto.genereazaCsvRezervari();
+                    break;
+                case 15:
+                    serviceAuto.genereazaCsvMecanici();
+                    break;
+                case 16:
+                    serviceAuto.genereazaCsvCasier();
+                    break;
+                case 17:
+                    serviceAuto.genereazaCsvMecanica();
+                    break;
+                case 18:
+                    serviceAuto.genereazaCsvTinichigerie();
+                    break;
+                case 19:
+                    serviceAuto.genereazaCsvVulcanizare();
+                    break;
+                case 20:
                     System.exit(0);
                     break;
                 default:
                     System.out.println("Ai ales o optiune gresita!!");
-
-
 
             }
         }

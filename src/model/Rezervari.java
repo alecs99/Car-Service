@@ -1,6 +1,8 @@
 package model;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Rezervari {
 
@@ -8,13 +10,32 @@ public class Rezervari {
     private String prenumeClient;
     private String marcaMasina;
     private String numeServiciu;
-    private Data data;
-    public Rezervari(String numeClient, String prenumeClient, String marcaMasina, String numeServiciu, int zi, int luna, int an) {
+    private SimpleDateFormat form = new SimpleDateFormat("dd/MM/yy HH:mm");
+
+
+    private Date data;
+
+    public Rezervari(String numeClient, String prenumeClient, String marcaMasina, String numeServiciu, String date) {
         this.numeClient = numeClient;
         this.prenumeClient = prenumeClient;
         this.marcaMasina = marcaMasina;
         this.numeServiciu = numeServiciu;
-        this.data = new Data(zi,luna,an);
+        data = new Date();
+        try {
+            data = form.parse(date);
+        } catch (Exception e) {
+            System.out.println();
+        }
+    }
+
+
+    public String getData() {
+        String dataStr = form.format(data);
+        return dataStr;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public String getNumeClient() {
@@ -50,13 +71,13 @@ public class Rezervari {
     }
 
 
-    public static Rezervari[] addRezervare(Rezervari [] rezervari, Rezervari rezervare) {
-        if(rezervari == null) {
-            rezervari = new Rezervari[]{ rezervare };
+    public static Rezervari[] addRezervare(Rezervari[] rezervari, Rezervari rezervare) {
+        if (rezervari == null) {
+            rezervari = new Rezervari[]{rezervare};
             return rezervari;
         }
         ArrayList<Rezervari> temp = new ArrayList<Rezervari>();
-        for(int i = 0; i < rezervari.length; i++) {
+        for (int i = 0; i < rezervari.length; i++) {
             temp.add(rezervari[i]);
         }
         temp.add(rezervare);
@@ -64,10 +85,10 @@ public class Rezervari {
         return rezervari;
     }
 
-    public static Rezervari[] removeRezervare(Rezervari [] rezervari, int index) {
+    public static Rezervari[] removeRezervare(Rezervari[] rezervari, int index) {
         ArrayList<Rezervari> temp = new ArrayList<Rezervari>();
-        for(int i = 0; i < rezervari.length; i++) {
-            if(i != index)
+        for (int i = 0; i < rezervari.length; i++) {
+            if (i != index)
                 temp.add(rezervari[i]);
         }
         rezervari = temp.toArray(new Rezervari[temp.size()]);
@@ -76,17 +97,8 @@ public class Rezervari {
 
     @Override
     public String toString() {
-        return "Rezervari{" +
-                "numeClient='" + numeClient + '\'' +
-                ", prenumeClient='" + prenumeClient + '\'' +
-                ", marcaMasina='" + marcaMasina + '\'' +
-                ", numeServiciu='" + numeServiciu + '\'' +
-                ", data=" + data +
-                '}';
+        return "Avem o rezervare pe numele " +
+                numeClient + ' ' + prenumeClient + " pentru autoturismul " +
+                marcaMasina + ' ' + "pentru " + numeServiciu + ' ' + "in data de: " + data;
     }
-
-
-
-
-
 }

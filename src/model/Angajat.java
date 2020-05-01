@@ -1,21 +1,29 @@
 package model;
 
-public class Angajat {
+public abstract class Angajat {
 
     private String numeAngajat;
     private String prenumeAngajat;
+    private String pozitie;
     private double salariu;
-    private double bonus;
 
-    public Angajat(String numeAngajat, String prenumeAngajat, double salariu, double bonus) {
+    public Angajat(String numeAngajat, String prenumeAngajat, String pozitie, double salariu) {
         this.numeAngajat = numeAngajat;
         this.prenumeAngajat = prenumeAngajat;
+        this.pozitie = pozitie;
         this.salariu = salariu;
-        this.bonus = bonus;
     }
 
     public String getNumeAngajat() {
         return numeAngajat;
+    }
+
+    public String getPozitie() {
+        return pozitie;
+    }
+
+    public void setPozitie(String pozitie) {
+        this.pozitie = pozitie;
     }
 
     public void setNumeAngajat(String numeAngajat) {
@@ -35,25 +43,17 @@ public class Angajat {
     }
 
     public void setSalariu(double salariu) {
-        this.salariu = salariu * this.bonus;
+        this.salariu = salariu;
     }
 
-    public double getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
-    }
 
     @Override
     public String toString() {
-        return "Angajati{" +
-                "prenumeAngajat='" + prenumeAngajat + '\'' +
+        return "Angajat{" +
+                "numeAngajat='" + numeAngajat + '\'' +
+                ", prenumeAngajat='" + prenumeAngajat + '\'' +
+                ", pozitie='" + pozitie + '\'' +
                 ", salariu=" + salariu +
-                ", bonus=" + bonus +
-                ", numeAngajat='" + numeAngajat + '\'' +
                 '}';
     }
-
 }

@@ -3,7 +3,7 @@ package model;
 
 import java.util.ArrayList;
 
-public class Servicii {
+public abstract class Servicii {
 
     private String tipServiciu;
     private double costServiciu;
@@ -63,11 +63,7 @@ public class Servicii {
     }
     @Override
     public String toString() {
-        return "servicii{" +
-                "tipuriServicii='" + tipServiciu + '\'' +
-                ", costServiciu=" + costServiciu +
-                ", durataExecutie=" + durataExecutie +
-                '}';
+        return "Serviciul " + tipServiciu + " cu pretul " + costServiciu + " si durata de executie " + durataExecutie;
     }
 
 
