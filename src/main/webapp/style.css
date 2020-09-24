@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+label{
+    display: block;
+}
+input[type="text"]{
+    display: block;
+}
+body {
+    background-color: rgb(91, 153, 252);
+    color: white;
+}
+h4{
+    margin-left: 60px;
+    margin-bottom: 10px;
+
+}
+h1{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#formCenter{
+    margin-left: 60px;
+}
+#centerDel{
+    margin-left: 50px;
+}
+.container{
+    position: fixed;
+    top: 28%;
+    left: 38%;
+}
+a{
+    margin-left: 10px;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+    text-underline: none;
+}
+a:hover{
+    color: darkgrey;
+}
+
+#Vulcanizare{
+    display: none;
+}
+#Mecanica{
+    display: none;
+}
+#Tinichigerie{
+    display: none;
+}
+#Casier{
+    display: none;
+}
+#space{
+    display: block;
+    margin-bottom: 10px;
+}
+form{
+    margin-top: 20px;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+}
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+input{
+    margin-bottom:10px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 2px solid white;
+}
+button{
+    margin-top: 10px;
+    margin-left: 45px;
+    outline: white;
+    background: transparent;
+    color: white;
+    border-color: white;
+
+}
+ol,ul{
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+button:hover{
+    background-color: white;
+    color: rgb(91, 153, 252);
+}
